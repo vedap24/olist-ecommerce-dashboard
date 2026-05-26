@@ -1,3 +1,7 @@
+-- KPI Queries
+-- Revenue Trend Queries
+-- Customer Analysis Queries
+-- Operations Analysis Queries
 
 -- ============================================================
 -- STEP 4: EDA - EXPLORATORY DATA ANALYSIS
