@@ -40,7 +40,7 @@ All SQL scripts used for schema creation, data loading, validation, and business
 ```
 olist-ecommerce-dashboard/
 ├── sql/
-│   ├── 01_data_loading.sql         # SQL statements to create all tables
+│   ├── 01_table_creation.sql       # SQL statements to create all tables
 │   ├── 02_data_loading.sql         # CSV loading scripts using `LOAD DATA LOCAL INFILE`
 │   ├── 03_data_validation.sql      # Data quality and validation checks before analysis
 │   └── 04_analysis_queries.sql     # KPI, trend, customer, category, and operations analysis queries
