@@ -42,7 +42,7 @@ olist-ecommerce-dashboard/
 ├── sql/
 │   ├── 01_table_creation.sql       # SQL statements to create all tables
 │   ├── 02_data_loading.sql         # CSV loading scripts using `LOAD DATA LOCAL INFILE`
-│   ├── 03_data_validation.sql      # Data quality and validation checks before analysis
+│   ├── 03_data_cleaning.sql      # Data quality and validation checks before analysis
 │   └── 04_analysis_queries.sql     # KPI, trend, customer, category, and operations analysis queries
 ├── dashboards/
 │   ├── Olist_Ecommerce.twbx         # Tableau packaged workbook
