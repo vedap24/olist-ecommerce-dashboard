@@ -78,6 +78,7 @@ Geographic breakdown by state, monthly revenue trend line, and Black Friday peak
 ### 3. Operations Dashboard
 Late delivery rate by state (map), top revenue categories (bar), and order status distribution.
 
+> 📎 [Download Tableau Workbook (.twbx)](dashboards/Olist_Ecommerce.twbx) | [Download Story Presentation (.pptx)](dashboards/Olist_Ecommerce_Story.pptx)
 ---
 
 ## Data Model — Star Schema
