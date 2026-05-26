@@ -2,9 +2,6 @@
 
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql) ![Tableau](https://img.shields.io/badge/Tableau-Public-orange?logo=tableau) ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
-
-# Olist E-Commerce Dashboard
-
 End-to-end SQL + Tableau e-commerce analytics project built using the Olist Brazilian E-Commerce dataset.
 
 ## Project Overview
