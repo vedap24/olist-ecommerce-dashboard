@@ -31,7 +31,7 @@ Raw CSV files were loaded into MySQL, cleaned, modeled into a star schema, analy
 8. **Portfolio Documentation** — Structured and published on GitHub
 
 
-###All SQL scripts used for schema creation, data loading, validation, and business analysis are included in the `sql/` folder.
+All SQL scripts used for schema creation, data loading, validation, and business analysis are included in the `sql/` folder.
 
 ---
 
