@@ -49,8 +49,8 @@ Focuses on late delivery rate by state and top product categories by revenue to 
 ![Operations Dashboard](dashboards/dashboard-3-operations-dashboard.png)
 
 ## Files Included
-- Tableau workbook: `dashboards/Olist_Ecommerce.twbx`
-- Story presentation: `dashboards/Olist_Ecommerce_Story.pptx`
+- Tableau workbook: [dashboards/Olist_Ecommerce.twbx]
+- Story presentation: [dashboards/Olist_Ecommerce_Story.pptx]
 - Exported dashboard PNGs
 - SQL scripts for schema creation, data loading, validation, and analysis
 
