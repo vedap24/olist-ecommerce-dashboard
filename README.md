@@ -19,7 +19,7 @@ The goal was to load raw CSV files into SQL, validate and analyze the data, and 
 6. Documented the project on GitHub
 
 ## Repository Structure
-
+```text
 olist-ecommerce-analysis/
 │
 ├── data/                   # Raw CSV files (not uploaded - too large)
@@ -30,7 +30,7 @@ olist-ecommerce-analysis/
 │   ├── Olist_Dashboard.pdf
 │   └── Olist_Dashboard.pptx
 └── README.md
-
+```
 ## Dashboard 1: Executive Overview
 Shows key business KPIs such as total revenue, total orders, AOV, on-time delivery percentage, and average review score.
 
