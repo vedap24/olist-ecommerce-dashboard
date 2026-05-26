@@ -40,15 +40,15 @@ All SQL scripts used for data loading, cleaning, validation, KPI creation, and a
 ```
 olist-ecommerce-dashboard/
 ├── sql/
-│   ├── 01_data_loading.sql          # Load 9 CSV files into MySQL
-│   ├── 02_data_cleaning.sql         # Null checks, duplicate detection, integrity validation
-│   ├── 03_analysis_queries.sql      # EDA + Business problem queries + KPI calculations
-│   └── 04_star_schema.sql           # Fact & dimension table creation
+│   ├── `01_data_loading.sql`         # SQL statements to create all tables
+│   ├── `02_data_loading.sql`         # CSV loading scripts using `LOAD DATA LOCAL INFILE`
+│   ├── 03_data_validation.sql      # Data quality and validation checks before analysis
+│   └── 04_analysis_queries.sql     # KPI, trend, customer, category, and operations analysis queries
 ├── dashboards/
-│   ├── olist_dashboard.twbx         # Tableau packaged workbook
-│   ├── dashboard_export.pdf         # Static PDF export
-│   └── screenshots/                 # Dashboard preview images
-└── README.md
+│   ├── Olist_Ecommerce.twbx         # Tableau packaged workbook
+│   ├── Olist_Ecommerce_Story.pptx   # presentation
+│   └── exported dashboard images                 
+└── `README.md`  #Project documentation
 ```
 
 > **Note:** Raw CSV data files are excluded from this repository. Download the dataset from [Kaggle — Olist E-Commerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
