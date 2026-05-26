@@ -31,7 +31,7 @@ Raw CSV files were loaded into MySQL, cleaned, modeled into a star schema, analy
 8. **Portfolio Documentation** — Structured and published on GitHub
 
 
-All SQL scripts used for schema creation, data loading, validation, and business analysis are included in the `sql/` folder.
+All SQL scripts used for table creation, data loading, validation, and business analysis are included in the `sql/` folder.
 
 ---
 
@@ -42,8 +42,8 @@ olist-ecommerce-dashboard/
 ├── sql/
 │   ├── 01_table_creation.sql       # SQL statements to create all tables
 │   ├── 02_data_loading.sql         # CSV loading scripts using `LOAD DATA LOCAL INFILE`
-│   ├── 03_data_cleaning.sql        # Data quality and validation checks before analysis
-│   └── 04_analysis_queries.sql     # KPI, trend, customer, category, and operations analysis queries
+│   ├── 03_data_cleaning.sql        # Data quality checks including null checks, duplicate checks, and referential integrity validation
+│   └── 04_analysis_queries.sql     # Business analysis queries for KPIs, customer distribution, revenue trends, delivery performance, and product/category insights
 ├── dashboards/
 │   ├── Olist_Ecommerce.twbx         # Tableau packaged workbook
 │   ├── Olist_Ecommerce_Story.pptx   # presentation
