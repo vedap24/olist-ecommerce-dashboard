@@ -104,5 +104,5 @@ fact_orders ── dim_products ── dim_sellers
 
 ## Author
 
-**Veda Praneeth** — Aspiring Data Analyst  
+**Veda Praneeth** — Data Analyst  
 [GitHub: vedap24](https://github.com/vedap24)
