@@ -1,7 +1,10 @@
 
--- -------------------------------------------------------------------------------------------
 
--- Step-3: Data cleaning
+-- -------------------------------------------------------------------------------------------
+-- Step-3: Data validation
+-- This script contains data quality checks performed after loading the Olist dataset into MySQL.
+-- It includes null checks, duplicate checks, referential integrity checks, and sanity checks.
+-- -------------------------------------------------------------------------------------------
 
 -- Starting with Table 1 — olist_orders
 
