@@ -2,108 +2,72 @@
 
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql) ![Tableau](https://img.shields.io/badge/Tableau-Public-orange?logo=tableau) ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
-End-to-end data analytics project using the **Olist Brazilian E-Commerce** public dataset.  
-Raw CSV files were loaded into MySQL, cleaned, modeled into a star schema, analyzed with advanced SQL, and visualized in Tableau — built as a portfolio-ready showcase of the full analytics workflow.
 
----
+# Olist E-Commerce Dashboard
+
+End-to-end SQL + Tableau e-commerce analytics project built using the Olist Brazilian E-Commerce dataset.
+
+## Project Overview
+This project analyzes the Olist Brazilian E-Commerce dataset using MySQL and Tableau.  
+The workflow covers data loading, validation, business analysis, and dashboard development to generate actionable insights across revenue, customers, delivery performance, and product categories.
 
 ## Tools & Technologies
-
-| Layer | Tool |
-|---|---|
-| Data Storage | MySQL 8.0 |
-| Data Analysis | SQL (Window Functions, CTEs, Aggregations) |
-| Visualization | Tableau Desktop / Tableau Public |
-| Dataset | Kaggle — Olist Brazilian E-Commerce (9 CSV files) |
-| Version Control | GitHub |
-
----
+- MySQL
+- SQL
+- Tableau
+- GitHub
+- Kaggle Olist Dataset
 
 ## Project Workflow
-
-1. **Data Loading** — Imported 9 raw CSV files into MySQL using `LOAD DATA LOCAL INFILE`
-2. **Data Cleaning & Validation** — Checked for nulls, duplicates, and referential integrity across all tables
-3. **Exploratory Data Analysis (EDA)** — Analyzed revenue trends, geography, product performance, delivery, and customer satisfaction
-4. **Data Modeling** — Built a Star Schema (fact + dimension tables) optimized for reporting
-5. **Business Problem Solving** — Wrote 5 targeted SQL queries addressing real business questions
-6. **KPI Building** — Calculated 6 core KPIs: Revenue, AOV, On-Time Delivery Rate, Review Score, Repeat Rate, Late Delivery %
-7. **Tableau Dashboards** — Built 3 interactive dashboards with a Story narrative
-8. **Portfolio Documentation** — Structured and published on GitHub
-
-
-All SQL scripts used for table creation, data loading, validation, and business analysis are included in the `sql/` folder.
-
----
+1. Downloaded the Olist dataset from Kaggle
+2. Loaded 9 CSV files into MySQL
+3. Performed data validation and quality checks
+4. Wrote SQL queries for KPIs and business analysis
+5. Built Tableau dashboards for executive, customer/revenue, and operations insights
+6. Exported dashboards and documented the project in GitHub
 
 ## Repository Structure
-
-```
-olist-ecommerce-dashboard/
-├── sql/
-│   ├── 01_table_creation.sql       # SQL statements to create all tables
-│   ├── 02_data_loading.sql         # CSV loading scripts using `LOAD DATA LOCAL INFILE`
-│   ├── 03_data_cleaning.sql        # Data quality checks including null checks, duplicate checks, and referential integrity validation
-│   └── 04_analysis_queries.sql     # Business analysis queries for KPIs, customer distribution, revenue trends, delivery performance, and product/category insights
-├── dashboards/
-│   ├── Olist_Ecommerce.twbx         # Tableau packaged workbook
-│   ├── Olist_Ecommerce_Story.pptx   # presentation
-│   └── exported dashboard images                 
-└── README.md                        #Project documentation
-```
-
-> **Note:** Raw CSV data files are excluded from this repository. Download the dataset from [Kaggle — Olist E-Commerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
-
----
-
-## Key Insights
-
-- **Total Revenue:** R$ 13.2M+ across ~99K orders (2016–2018)
-- **Top State:** São Paulo accounts for the majority of customers and revenue
-- **Revenue Peak:** November 2017 Black Friday drove the single largest monthly spike
-- **Top Categories:** Health & Beauty and Watches & Gifts lead in revenue
-- **On-Time Delivery:** ~92% of orders delivered on time overall
-- **Late Delivery Hotspots:** States like Amapá and Roraima show significantly higher delay rates
-- **Review Score:** Average of ~4.09 / 5.0 across all delivered orders
-
----
+- `dashboards/` – Tableau workbook, story presentation, and exported dashboard images
+- `sql/01_table_creation.sql` – SQL statements used to create all required tables
+- `sql/02_data_loading.sql` – CSV loading scripts using `LOAD DATA LOCAL INFILE`
+- `sql/03_data_validation.sql` – Data quality checks including null checks, duplicate checks, and referential integrity validation
+- `sql/04_analysis_queries.sql` – Business analysis queries for KPIs, customer distribution, revenue trends, delivery performance, and category insights
+- `README.md` – Project documentation
 
 ## Dashboards
 
 ### 1. Executive Overview
-High-level KPI scorecards: Total Revenue, Total Orders, AOV, On-Time Delivery Rate, and Avg Review Score.
+Shows the key business KPIs including total revenue, total orders, average order value, on-time delivery percentage, and average review score.
+
+![Executive Overview](dashboards/dashboard-1-executive-overview.png)
 
 ### 2. Customer & Revenue Analysis
-Geographic breakdown by state, monthly revenue trend line, and Black Friday peak identification.
+Highlights customer distribution by state and monthly revenue trends, including the Black Friday peak in November 2017.
+
+![Customer & Revenue Analysis](dashboards/dashboard-2-customer-revenue-analysis.png)
 
 ### 3. Operations Dashboard
-Late delivery rate by state (map), top revenue categories (bar), and order status distribution.
+Focuses on late delivery rate by state and top product categories by revenue to identify operational and category-level performance patterns.
 
-> 📎 [Download Tableau Workbook (.twbx)](dashboards/Olist_Ecommerce.twbx) | [Download Story Presentation (.pptx)](dashboards/Olist_Ecommerce_Story.pptx)
----
+![Operations Dashboard](dashboards/dashboard-3-operations-dashboard.png)
 
-## Data Model — Star Schema
+## Files Included
+- Tableau workbook: `dashboards/Olist_Ecommerce.twbx`
+- Story presentation: `dashboards/Olist_Ecommerce_Story.pptx`
+- Exported dashboard PNGs
+- SQL scripts for schema creation, data loading, validation, and analysis
 
-```
-                    dim_customers
-                         |
-fact_orders ── dim_products ── dim_sellers
-                         |
-                    dim_dates
-```
-
-`fact_orders` is the central fact table joining all dimensions on `order_id`, `customer_id`, `product_id`, and `seller_id`.
-
----
+## Key Insights
+- Total revenue exceeded 13.2M across the dataset period.
+- Sao Paulo contributed the highest share of customers.
+- Revenue peaked in November 2017 during Black Friday.
+- On-time delivery performance was strong overall, but some states showed higher late delivery rates.
+- Health & Beauty and Watches & Gifts were among the top revenue-generating product categories.
 
 ## Dataset
+Source: [Olist Brazilian E-Commerce Public Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
-- **Source:** [Kaggle — Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-- **Size:** 9 CSV files, ~100K orders, 2016–2018
-- **Tables:** customers, orders, order_items, order_payments, order_reviews, products, sellers, geolocation, product_category_name_translation
+The dataset includes customers, orders, products, sellers, payments, reviews, and geolocation data.
 
----
-
-## Author
-
-**Veda Praneeth** — Data Analyst  
-[GitHub: vedap24](https://github.com/vedap24)
+## Notes
+All SQL scripts used for table creation, data loading, validation, and business analysis are included in the `sql/` folder.
