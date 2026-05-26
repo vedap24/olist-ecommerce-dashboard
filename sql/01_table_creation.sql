@@ -6,7 +6,7 @@
 -- ============================================================
 
 CREATE DATABASE IF NOT EXISTS olist;
-USE olist;
+USE olist_e_commerce;
 
 -- -----------------------------------------------------------
 -- 1. Customers
