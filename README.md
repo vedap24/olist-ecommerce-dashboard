@@ -30,6 +30,7 @@ Raw CSV files were loaded into MySQL, cleaned, modeled into a star schema, analy
 7. **Tableau Dashboards** — Built 3 interactive dashboards with a Story narrative
 8. **Portfolio Documentation** — Structured and published on GitHub
 
+All SQL scripts used for data loading, cleaning, validation, KPI creation, and analysis are included in the `sql/` folder.
 ---
 
 ## Repository Structure
